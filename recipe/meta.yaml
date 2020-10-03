@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/webchem_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/webchem/webchem_{{ version }}.tar.gz
-  sha256: 2623f229ada6f285556580415991785311f15f6d73d26144f9b97787fa0496b0
+  sha256: f150ffc65c0db354e96bc0a69bb5c3fe6af9266b453d81102858a79932844fed
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
 
   rpaths:
@@ -59,15 +59,12 @@ test:
 about:
   home: https://docs.ropensci.org/webchem, https://github.com/ropensci/webchem
   license: MIT
-  summary: 'Chemical information from around the web. This package interacts with a suite of
-    web services for chemical information. Sources include: Alan Wood''s Compendium
-    of Pesticide Common Names, Chemical Identifier Resolver, ChEBI, Chemical Translation
-    Service, ChemIDplus, ChemSpider, ETOX, Flavornet, NIST Chemistry WebBook, OPSIN,
-    PAN Pesticide Database, PubChem, SRS, Wikidata.'
+  summary: "Chemical information from around the web. This package interacts with a suite of web services for chemical information. Sources include: Alan Wood's Compendium of Pesticide Common Names, Chemical Identifier Resolver, ChEBI, Chemical Translation Service, ChemIDplus, ChemSpider, ETOX, Flavornet, NIST Chemistry\
+    \ WebBook, OPSIN, PAN Pesticide Database, PubChem, SRS, Wikidata."
 
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
