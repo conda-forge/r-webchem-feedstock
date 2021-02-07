@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/webchem_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/webchem/webchem_{{ version }}.tar.gz
-  sha256: f150ffc65c0db354e96bc0a69bb5c3fe6af9266b453d81102858a79932844fed
+  sha256: 614f178092650bd42f8713ddfc74ce7e42190b21d6d5846444a5ee90d8d7f160
 
 build:
   merge_build_host: true  # [win]
