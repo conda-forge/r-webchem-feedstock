@@ -1,11 +1,11 @@
-About r-webchem
-===============
+About r-webchem-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-webchem-feedstock/blob/main/LICENSE.txt)
 
 Home: https://docs.ropensci.org/webchem, https://github.com/ropensci/webchem
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-webchem-feedstock/blob/main/LICENSE.txt)
 
 Summary: Chemical information from around the web. This package interacts with a suite of web services for chemical information. Sources include: Alan Wood's Compendium of Pesticide Common Names, Chemical Identifier Resolver, ChEBI, Chemical Translation Service, ChemIDplus, ChemSpider, ETOX, Flavornet, NIST Chemistry WebBook, OPSIN, PAN Pesticide Database, PubChem, SRS, Wikidata.
 
